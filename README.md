@@ -24,6 +24,16 @@ This statement sets `StudentDB` as the active database.
 
 #### Student Table
 
+syntax:
+```sql
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+   ....
+);
+```
+
 ```sql
 CREATE TABLE Students (
     StudentID INT PRIMARY KEY,
@@ -72,6 +82,19 @@ CREATE TABLE Enrollments (
 - **Primary Key**: Uniquely identifies each record in a table.
 - **Foreign Key**: Links records in one table to records in another table.
 
+### 5. Alter Table
+Syntax:
+```sql
+ALTER TABLE table_name
+ADD column_name datatype;
+```
+
+Example:
+```sql
+ALTER TABLE Students
+ADD Email varchar(255);
+```
+
 ### 5. Inserting Data
 
 To insert data into the `Students` table:
@@ -96,6 +119,12 @@ INSERT INTO Enrollments (EnrollmentID, StudentID, CourseID) VALUES (1001, 1, 101
 
 ### 6. Select Statement
 
+syntax:
+```sql
+SELECT column1, column2, ...
+FROM table_name;
+```
+
 To retrieve all records from the `Students` table:
 
 ```sql
@@ -109,6 +138,13 @@ To retrieve specific columns:
 
 ```sql
 SELECT FirstName, LastName FROM Students;
+```
+
+### 7. Update Table
+```sql
+UPDATE Customers
+SET Email="johndoe@gmail.com"
+WHERE lastName = doe;
 ```
 
 ### 7. Where Clause
