@@ -142,7 +142,7 @@ SELECT FirstName, LastName FROM Students;
 
 ### 7. Update Table
 ```sql
-UPDATE Customers
+UPDATE student
 SET Email="johndoe@gmail.com"
 WHERE lastName = doe;
 ```
